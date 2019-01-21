@@ -1,0 +1,139 @@
+/* initailize */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Noto Sans KR, sans-serif;
+}
+
+body {
+    /*background: yellow;*/
+}
+
+ul,
+li,
+a {
+    color: #222;
+    list-style-type: none;
+    text-decoration-line: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5, a {
+    font-family: "Helvetica Neue","Segoe UI",Arial,sans-serif;
+    margin: 20px 0;
+    padding: 0;
+}
+
+/* clearfix */
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* layout */
+.layout-container {
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    /*background: #000;*/
+}
+
+.layout-left {
+    float: left;
+    width: 50%;
+    /*background: darkred;*/
+}
+
+.layout-right {
+    float: right;
+    width: 50%;
+    height: inherit;
+    overflow: hidden;
+    /*background: aqua;*/
+}
+
+.layout-card {
+    width: 22%;
+    height: 390px;
+    margin: 0 30px 20px 0;
+    float: left;
+    /*background: bisque;*/
+}
+.layout-card:nth-child(5n) {
+    margin: 0 0 20px 0;
+}
+/* nav */
+.nav-right {
+    float: right;
+    margin-right: 15px;
+}
+.nav li {
+    float: left;
+    padding: 20px;
+}
+
+.contents {
+    padding: 20px;
+    width: 100%;
+    /*background: gray;*/
+}
+
+/* logo */
+.logo-anchor {
+    font-size: 0;
+}
+
+.logo-anchor img {
+    width: 340px;
+    padding: 20px;
+}
+
+/* card */
+.layout-card__section {
+    max-width: 100%;
+    height: 50%;
+    position: relative;
+    /*background: coral;*/
+}
+.layout-card__section a {
+    font-size: 0;
+}
+.layout-card__section a:hover {
+    color: #000;
+}
+.layout-card__section img {
+    max-width: 100%;
+    min-height: 13rem;
+    background-size: cover;
+}
+/*test / it will be deleted*/
+.layout-card__section.one {
+    /*background: blueviolet;*/
+}
+
+.layout-card__section h1,
+.layout-card__section h2,
+.layout-card__section h3,
+.layout-card__section p {
+    margin: 10px 0;
+}
+
+.layout-card__section .date {
+    margin-top: 50px;
+}
+.layout-card__section .sub {
+    color: #545454;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.layout-card__section .main {
+    color: #222;
+    font-size: 1.125rem;
+}
